@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>popup zakat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="main_popup">
+        <h1 class="main_title">جمعية البر الخيرية</h1>
+        <p class="main_paragraph">المتجر الإلكتروني</p>
+
+        <!-- start popup  -->
+        <div class="popup" id="popup">
+            <div class="popup_container">
+                <div class="popup_content">
+                    <h1 class="popup_title">حاسبة الزكاة </h1>
+
+                    <div class="form_container">
+                        <div class="form_wrap">
+                            <div class="form_item">
+                                <label>مجموع المبلغ المراد تزكيته </label>
+                                <input id="amount" type="number" >
+                                <input class="form_calculate" type="submit" value="احسب .." onclick="calculate()">
+                            </div>
+                        </div>
+                        <div id="result">
+                            <h1 class="popup_title"><span>اجمالي زكاتك : <span id="zakat_amount"></span> ريال </span></h1>
+
+                            <div class="btn">
+                                <input type="submit" value="عرض المنتجات المناسبة " onclick="goToProducts()">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <span id="close">
+                <?xml version="1.0" encoding="UTF-8"?><svg width="45" height="45" viewBox="0 0 48 48" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <rect width="48" height="48" fill="white" fill-opacity="0.01" />
+                    <path d="M14 14L34 34" stroke="#333" stroke-width="1" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path d="M14 34L34 14" stroke="#333" stroke-width="1" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </span>
+        </div>
+        <!-- end popup -->
+    </main>
+
+    <script src="app.js" type="text/javascript"></script>
+</body>
+
+</html>

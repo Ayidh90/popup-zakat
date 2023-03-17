@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    /* padding: 0; */
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: montserrat;
+    background-color: #ecf5f5;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+
+.main_title {
+    font-size: 4rem
+}
+
+.main_paragraph {
+    font-size: 2rem;
+}
+
+main.main_popup {
+    text-align: center;
+}
+
+/* popup */
+
+.popup {
+    max-width: 700px;
+    width: 85%;
+    position: fixed;
+    top: 50%;
+    background-color: rgba(0, 0, 0, 0.3);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    background: #EE9B00;
+    display: none;
+}
+
+.popup.show {
+    display: block
+}
+
+#close {
+    cursor: pointer;
+    color: white;
+    position: absolute;
+    top: 0;
+    font-size: 25px;
+    right: 0;
+    padding: 1rem;
+    margin-right: 10px;
+    text-align: left;
+}
+
+.popup_container {
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.popup_container .form_wrap.form_grp {
+    display: flex;
+}
+
+.popup_container .form_wrap.form_grp .form_item {
+    width: 50%;
+}
+
+.popup_container .form_item {
+    margin-bottom: 25px;
+}
+
+.popup_container .form_item label {
+    display: block;
+    margin-bottom: 5px;
+    text-align: right;
+}
+
+.form_container {
+    padding: 5px;
+    margin-top: 20px;
+    border-radius: 3px;
+}
+
+.form_container .form_item {
+    margin-bottom: 25px;
+}
+
+.form_container .form_wrap {
+    display: flex;
+}
+
+.form_container .form_item input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #dadce0;
+    border-radius: 3px;
+}
+
+.form_container .form_item label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 18px
+}
+.form_calculate {
+    margin-top: 5px;
+}
+.form_container .btn input[type="submit"] {
+    background: #84490a;
+    border: 1px solid #432c04;
+    padding: 10px;
+    width: 100%;
+    border-radius: 3px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.popup_title {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.popup_title span {
+    display: block;
+    font-weight: 400;
+}
+
+@media only screen and (min-width: 768px) {
+    .popup_container {
+        flex-direction: row;
+        padding: 2rem;
+        text-align: left;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .popup_title {
+        font-size: 2rem;
+    }
+}
